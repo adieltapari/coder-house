@@ -20,8 +20,8 @@ function palabra() {
 function comparar() {
     const num1 = 100;
     const num2 = 50;
-    var numero1 = parseInt(prompt("Ingrese un valor para A"));
-    var numero2 = parseInt(prompt("Ingrese un numero B"))
+    let numero1 = parseInt(prompt("Ingrese un valor para A"));
+    let numero2 = parseInt(prompt("Ingrese un numero B"))
 
     if (numero1 > numero2) {
         alert("A = " + numero1 + " > " + "B = " + numero2);
