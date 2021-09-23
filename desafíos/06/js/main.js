@@ -1,9 +1,10 @@
 
     class Encuesta {
-        constructor(nombre, cantidadPreguntas,cantidadDias){
+        constructor(nombre, cantidadPreguntas,cantidadDias,preguntas){
             this.nombre = nombre;
             this.cantidadPreguntas = cantidadPreguntas;
             this.cantidadDias = cantidadDias;
+            this.preguntas =[preguntas];
         }
          
         toString(){
@@ -16,13 +17,13 @@
     class Pregunta{
         constructor(nombre,opciones){
             this.nombre = nombre;
-            this.opciones = opciones;
+            this.opciones =[opciones];
         }
     }
     
     const preguntas =[];
 
-    preguntas.push(new Pregunta("pregunta1","opcion1"));
+    preguntas.push(new Pregunta("¿Es recomendable usar var para declarar variables?",["Si", "No"]));
 
     console.log(preguntas);
 
@@ -30,7 +31,8 @@
     const cantidadPreguntas = Number(prompt("Ingrese la cantidad de preguntas"));
     const cantidadDias = Number(prompt("Ingrese la cantidad de dias que va a estar activa"));
     
-    const encuesta1 = new Encuesta(nombre, cantidadPreguntas, cantidadDias);
+    const encuesta1 = new Encuesta(nombre, cantidadPreguntas, cantidadDias,preguntas);
     
+    console.log(encuesta1);
     alert(encuesta1.toString());
 
