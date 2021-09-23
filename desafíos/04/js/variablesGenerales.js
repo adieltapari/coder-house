@@ -22,6 +22,7 @@ let cart1 = 0;
 let cart2 = 0;
 let cart3 = 0;
 
+let total =0;
 
 let resp = 'S';
 

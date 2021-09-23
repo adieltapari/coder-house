@@ -8,12 +8,16 @@ do{
     addToCart(option, qty);
 
     resp = prompt('¿Desea agregar mas productos a la cuenta? S/N');
+
     if( resp == "N"){
-    purchaseDetail(cart1,cart2,cart3); 
+    purchaseDetail(cart1,cart2,cart3);
+
+        if(total>0){
+            cuotas = parseInt(prompt('ingrese la cantidad de cuotas'));
+            calculateFees(total,cuotas);
+        } 
     }
+
 }while(resp === "S" );
-
-
-
 
 alert('Gracias, vuelva prontos')
