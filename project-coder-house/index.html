@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <title>Encuestas</title>
+</head>
+<body>
+    <h1>Menu Peliculas</h1>
+    <button id="showMenu">Mostrar Menu</button>
+    <div id="menuAdd" class="hidden">
+        <form id="formPolls">
+            <input id="name" type="text" autocomplete="off" placeholder="Nombre" >
+            <input id="amountQuestions" type="number" autocomplete="off" placeholder="Cantidad de Preguntas" >
+            <input id="amountDays" type="number" autocomplete="off" placeholder="Cantidad de días activa" >
+            <input id="btn" type="submit" value="Agregar Encuesta">
+        </form>
+    </div>
+    <div id="list"></div>
+    <script src="js/createClass.js"></script>
+    <script src="js/createInstance.js"></script>
+</body>
+</html>

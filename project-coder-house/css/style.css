@@ -1,0 +1,17 @@
+.hidden{
+    display: none;
+}
+
+#showMenu{
+    margin-bottom: 1em;
+}
+
+#btn{
+    margin-top: 1em;
+}
+
+.card {
+    background-color: lightgrey;
+    margin: 1vh;
+}
+
