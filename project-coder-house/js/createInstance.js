@@ -1,13 +1,14 @@
-//event to display polls menu
-let showMenu = document.getElementById("showMenu");
-showMenu.addEventListener("click",showForm);
+
+//Function to show movies menu
+$('#showMenu').click(function(){
+    document.querySelector("#menuAdd").classList.toggle("hidden");
+})
 
 //event to save survey form
 let form = document.getElementById("formPolls");
 form.addEventListener("submit",savePoll);
 
 //function to load the LocalStorage listing or start it if there isn't
-
 function loadLIst(){
     let listPolls = JSON.parse(localStorage.getItem("listPolls"));
     if(listPolls == null){
@@ -35,11 +36,6 @@ function savePoll(e){
     saveList(listPolls);
 
     document.getElementById('formPolls').reset();
-}
-
-//Function to show movies menu
-function showForm(){
-    document.querySelector("#menuAdd").classList.toggle("hidden");
 }
 
 //function to arm card
