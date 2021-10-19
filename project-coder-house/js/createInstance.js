@@ -1,8 +1,7 @@
-
 //Function to show movies menu
-$('#showMenu').click(function(){
-    document.querySelector("#menuAdd").classList.toggle("hidden");
-})
+$('#showMenu').click(() =>{
+    $("#menuAdd").toggle("fast");
+});
 
 //event to save survey form
 let form = document.getElementById("formPolls");
