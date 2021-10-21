@@ -1,0 +1,30 @@
+{
+    "polls": [
+        {
+            "name": "Recoleción de la basura",
+            "amountQuestions": 5,
+            "amountDays": 20
+            
+        },
+        {
+            "name": "Alumbrado publico",
+            "amountQuestions": 4,
+            "amountDays": 20
+    
+        },
+        
+        {
+            "name": "Transito",
+            "amountQuestions": 7,
+            "amountDays": 25
+            
+        },
+        {
+            "name": "Sistema de bicicletas",
+            "amountQuestions": 6,
+            "amountDays": 30
+        
+        }
+]
+
+}
